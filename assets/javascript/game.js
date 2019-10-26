@@ -15,15 +15,15 @@ var guessChoices = document.getElementById("guessChoices-text");
 
 // This function is run whenever the user presses a key.
 document.onkeyup = function (event) {
-    console.log(event.key)
-    console.log(event)
+    var userGuess = event.key;
     var userChoice = event.key
-    console.log(userChoice)
+    var guessChoices = guessChoisce[Math.floor(Math.random() * guessChoices.length)];
+
+    
     wins = event.key
     example()
 }
 
 function example() {
-    console.log(wins)
+    
 }
-console.log(wins)
